@@ -1,0 +1,66 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Donation > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bcXGCL jvhddM"
+  >
+    <img
+      alt="cotton blankets"
+      class="sc-gswONk hIsuie"
+      src="/Authenticity50_Cotton_Blankets.webp"
+    />
+    <div
+      class="sc-dkrGBB hzkIPU"
+    >
+      <h1
+        class="sc-hLBatu cDmtPE"
+      >
+        Blankets
+      </h1>
+      <div>
+        <h2
+          class="sc-eDvShL jsfACy"
+        >
+          <b>
+            category : 
+          </b>
+          clothing
+        </h2>
+        <h2
+          class="sc-eDvShL jsfACy"
+        >
+          <b>
+            location : 
+          </b>
+          haifa
+        </h2>
+        <h2
+          class="sc-eDvShL jsfACy"
+        >
+          <b>
+            publisher : 
+          </b>
+          someone
+        </h2>
+        <h2
+          class="sc-eDvShL jsfACy"
+        >
+          <b>
+            details : 
+          </b>
+          Gently used blankets in good condition
+        </h2>
+        <h2
+          class="sc-eDvShL jsfACy"
+        >
+          <b>
+            Flexible : 
+          </b>
+          yes
+        </h2>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

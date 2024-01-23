@@ -1,0 +1,24 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CardDetails > matches snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <h2
+      class="sc-eDvShL jsfACy"
+    >
+      <b>
+        name : 
+      </b>
+      John
+    </h2>
+    <h2
+      class="sc-eDvShL jsfACy"
+    >
+      <b>
+        age : 
+      </b>
+      20
+    </h2>
+  </div>
+</DocumentFragment>
+`;

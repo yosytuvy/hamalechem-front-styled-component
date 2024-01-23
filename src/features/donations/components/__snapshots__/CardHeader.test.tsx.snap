@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CardHeader > matches snapshot 1`] = `
+<DocumentFragment>
+  <h1
+    class="sc-hLBatu cDmtPE"
+  >
+    Test Title
+  </h1>
+</DocumentFragment>
+`;
