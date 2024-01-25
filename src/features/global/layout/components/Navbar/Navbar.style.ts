@@ -80,7 +80,7 @@ export const SocialIconsList = styled.ul`
     width: 100%;
 `;
 
-export const SocialLink = styled.a`
+export const SocialLink = styled.h3`
     font-size: 2rem;
     color: #777;
     transition: color 0.3s;

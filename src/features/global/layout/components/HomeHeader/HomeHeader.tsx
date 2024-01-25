@@ -4,9 +4,9 @@ import {
     BannerButton,
     BannerHeading,
     BannerText,
-} from "./Header.style";
+} from "./HomeHeader.style";
 
-export const Header = () => {
+export const HomeHeader = () => {
     return (
         <PageHeader>
             <Banner>

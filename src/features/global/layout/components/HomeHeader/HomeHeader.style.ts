@@ -1,9 +1,9 @@
 import styled, { keyframes } from "styled-components";
 
 export const PageHeader = styled.header`
-    height: 20vh;
+    height: 300px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-        url(/headerimage.jpg) center no-repeat;
+        url(/headerimage.jpg)  no-repeat;
     background-size: cover;
 `;
 

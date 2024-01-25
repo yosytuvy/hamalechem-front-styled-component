@@ -7,7 +7,7 @@ interface InitialState {
   fullName: string | null;
   userType: "solider" | "contributor" | null;
 }
-const userDetailsJson = localStorage.getItem("User_Details") || "";
+const userDetailsJson = localStorage.getItem("HAMALECHEM_TOKEN") || "";
 const userDetails = JSON.parse(userDetailsJson!);
 
 const initialState: InitialState = {

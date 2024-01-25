@@ -6,9 +6,9 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
     publicDir: "./public",
     plugins: [react()],
-    test: {
-        globals: true,
-        environment: "jsdom",
-        setupFiles: "./src/tests/setup.ts"
-    },
+    // test: {
+    //     globals: true,
+    //     environment: "jsdom",
+    //     setupFiles: "./src/tests/setup.ts"
+    // },
 });

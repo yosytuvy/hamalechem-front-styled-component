@@ -1,7 +1,8 @@
 # TODO
 
 ### donation page
-- [x] create the header
-- [ ] create single card
-- [ ] create div for all the cards
-- [ ] display all the card in a nice way
+
+-   [x] create the header
+-   [x] create single card
+-   [x] create div for all the cards
+-   [x] display all the card in a nice way

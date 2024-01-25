@@ -1,27 +1,24 @@
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import { Footer } from "./features/global/layout/components/Footer/Footer";
-import { Header } from "./features/global/layout/components/Header/Header";
-import { Navbar } from "./features/global/layout/components/Navbar/Navbar";
+import Router from "./features/global/routers/Router";
+import { ApolloProvider } from "@apollo/client";
+import client from "./features/global/apollo/apolloClient";
+import Layout from "./features/global/layout/components/Layout";
+// import { Provider } from "react-redux";
+// import { store } from "./redux/store";
+
 function App() {
     return (
-        <>
-            <Navbar />
-            <Header/>
-            <Footer />
-        </>
+        <ApolloProvider client={client}>
+            {/* <Provider store={store}> */}
+            <BrowserRouter>
+                <Layout>
+                    <Router />
+                </Layout>
+            </BrowserRouter>
+            {/* </Provider> */}
+        </ApolloProvider>
     );
 }
-// function App() {
-//     return (
-//         <>
-//             <Navbar />
-//             <Header />
-//             <BrowserRouter>
-//                 <Router />
-//             </BrowserRouter>
-//             <Footer />
-//         </>
-//     );
-// }
 
 export default App;

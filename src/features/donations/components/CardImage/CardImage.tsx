@@ -1,4 +1,4 @@
-import { DonationImg } from "../pages/DonationDetailsPage/DonationDetailsPage.style";
+import { DonationImg } from "../../pages/DonationDetailsPage/DonationDetailsPage.style";
 
 type CardDetailsProps = {
     imageSrc?: string;

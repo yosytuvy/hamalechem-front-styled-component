@@ -5,6 +5,7 @@ exports[`CardDetails > matches snapshot 1`] = `
   <div>
     <h2
       class="sc-eDvShL jsfACy"
+      role="listitem"
     >
       <b>
         name : 
@@ -13,6 +14,7 @@ exports[`CardDetails > matches snapshot 1`] = `
     </h2>
     <h2
       class="sc-eDvShL jsfACy"
+      role="listitem"
     >
       <b>
         age : 

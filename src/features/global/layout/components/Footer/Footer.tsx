@@ -18,7 +18,7 @@ export const Footer = () => {
                     <Heading>Contact</Heading>
                     <List>
                         <ListItem>
-                            <Link href="#">support@grandhotel.com</Link>
+                            <Link href="#">support@hamalechem.com</Link>
                         </ListItem>
                         <ListItem>
                             <Link href="#">Some Street in Petach Tikva, Israel</Link>

@@ -1,27 +1,18 @@
-import { DonationCard, DonationContent } from "./DonationDetailsPage.style";
-import CardImage from "../../components/CardImage";
-import CardHeader from "../../components/CardHeader";
-import CardDetails from "../../components/CardDetails";
-
-const fakeData = {
-    category: "clothing",
-    location: "haifa",
-    publisher: "someone",
-    details: "Gently used blankets in good condition",
-    Flexible: "yes",
-};
+import { useParams } from "react-router-dom";
+import { useQuery } from "@apollo/client";
+import { GET_DONATION_BY_ID_QUERY } from "../../../global/apollo/apolloQueries";
+import DonationCard from "../../components/DonationCard/DonationCard";
 
 export const Donation = () => {
+    const { id } = useParams();
+    const { data, loading, error } = useQuery(GET_DONATION_BY_ID_QUERY, {
+        variables: { id: id },
+    });
+
+    if (error) return <p>error has accord try to reload...</p>;
+    if (loading) return <p>loading...</p>;
+
     return (
-        <DonationCard>
-            <CardImage
-                imageAlt="cotton blankets"
-                imageSrc="/Authenticity50_Cotton_Blankets.webp"
-            />
-            <DonationContent>
-                <CardHeader title="Blankets" />
-                <CardDetails content={fakeData} />
-            </DonationContent>
-        </DonationCard>
+        <DonationCard donation={data.donation}/>
     );
 };
