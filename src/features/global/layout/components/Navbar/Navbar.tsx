@@ -9,7 +9,6 @@ import {
     Line3,
     SocialIconsList,
     SocialLink,
-    Year,
     Navigation,
     NavigationHeading,
     NavigationSearch,
@@ -19,10 +18,13 @@ import {
     NavigationItem,
     NavigationLink,
     Copyright,
+    RighButton,
 } from "./Navbar.style";
 import ROUTES from "../../../routers/RouterModel";
 
 export const Navbar = () => {
+    const token = localStorage.getItem("HAMALECHEM_TOKEN");
+
     return (
         <NavBar>
             <Checkbox id="click" />
@@ -44,7 +46,11 @@ export const Navbar = () => {
                     </SocialLink>
                 </SocialIconsList>
 
-                <Year>2024</Year>
+                {token ? (
+                    <RighButton>My products</RighButton>
+                ) : (
+                    <RighButton>Sign Up</RighButton>
+                )}
             </Sidebar>
 
             <Navigation>
@@ -59,13 +65,17 @@ export const Navbar = () => {
 
                 <NavigationList>
                     <NavigationItem>
-                        <NavigationLink href="#">Home</NavigationLink>
+                        <NavigationLink>Home</NavigationLink>
                     </NavigationItem>
                     <NavigationItem>
-                        <NavigationLink href="#">Donations</NavigationLink>
+                        <NavigationLink href="/donations">
+                            Donations
+                        </NavigationLink>
                     </NavigationItem>
                     <NavigationItem>
-                        <NavigationLink href="#">Requests</NavigationLink>
+                        <NavigationLink href="/requests">
+                            Requests
+                        </NavigationLink>
                     </NavigationItem>
                 </NavigationList>
 

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { GET_DONATION_BY_ID_QUERY } from "../../../global/apollo/apolloQueries";
-import DonationCard from "../../components/DonationCard/DonationCard";
+import DonationCard from "../../components/DonationCard";
 
 export const Donation = () => {
     const { id } = useParams();
@@ -12,7 +12,5 @@ export const Donation = () => {
     if (error) return <p>error has accord try to reload...</p>;
     if (loading) return <p>loading...</p>;
 
-    return (
-        <DonationCard donation={data.donation}/>
-    );
+    return <DonationCard donation={data.donation} />;
 };

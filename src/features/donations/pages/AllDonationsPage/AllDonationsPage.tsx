@@ -1,6 +1,6 @@
 import { useQuery } from "@apollo/client";
 import { HomeHeader } from "../../../global/layout/components/HomeHeader/HomeHeader";
-import SmallCard from "../../components/SmallCard/SmallCard";
+import SmallCard from "../../../global/components/SmallCard/SmallCard";
 import { Container } from "./AllDonationsPage.style";
 import { GET_ALL_DONATIONS_QUERY } from "../../../global/apollo/apolloQueries";
 import { useEffect } from "react";
@@ -23,7 +23,7 @@ const AllDonationsPage = () => {
             <HomeHeader />
             <Container>
                 {data.donations.map((product: DonationInterface) => (
-                    <SmallCard key={product._id} product={product} />
+                    <SmallCard type="donations" key={product._id} product={product} />
                 ))}
             </Container>
         </>

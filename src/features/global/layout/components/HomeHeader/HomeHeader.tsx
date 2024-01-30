@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import {
     PageHeader,
     Banner,
@@ -7,14 +8,28 @@ import {
 } from "./HomeHeader.style";
 
 export const HomeHeader = () => {
+    const navigate = useNavigate();
+
+    const navigateToDonationsPage = () => {
+        navigate("/donations");
+    };
+
+    const navigateToRequestsPage = () => {
+        navigate("/requests");
+    };
+
     return (
         <PageHeader>
             <Banner>
                 <BannerHeading>Welcome to our website</BannerHeading>
                 <BannerText>Help our soliders</BannerText>
                 <div>
-                    <BannerButton>Donations</BannerButton>
-                    <BannerButton>Requests</BannerButton>
+                    <BannerButton onClick={navigateToDonationsPage}>
+                        Donations
+                    </BannerButton>
+                    <BannerButton onClick={navigateToRequestsPage}>
+                        Requests
+                    </BannerButton>
                 </div>
             </Banner>
         </PageHeader>

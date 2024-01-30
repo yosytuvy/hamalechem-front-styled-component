@@ -90,12 +90,16 @@ export const SocialLink = styled.h3`
     }
 `;
 
-export const Year = styled.div`
+export const RighButton = styled.div`
     position: absolute;
     right: 1rem;
 
-    font-size: 1.5rem; // smaller
-    color: #555;
+    font-size: 2rem;
+    color: #163D4E;
+
+    &:hover {
+        cursor: pointer;
+    }
 `;
 
 export const Navigation = styled.div`

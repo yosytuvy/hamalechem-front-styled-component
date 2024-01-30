@@ -1,4 +1,4 @@
-export interface DonationInterface {
+export interface RequestInterface {
     _id: string;
     name: string;
     category: string;

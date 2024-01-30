@@ -5,13 +5,13 @@ import { UserDetailsInterface } from "./interfaces/UserDetailsInterface";
 interface InitialState {
   id: string | null;
   fullName: string | null;
-  userType: "solider" | "contributor" | null;
+  userType: string | null;
 }
-const userDetailsJson = localStorage.getItem("HAMALECHEM_TOKEN") || "";
-const userDetails = JSON.parse(userDetailsJson!);
 
 const initialState: InitialState = {
-  ...userDetails,
+  id: null,
+  fullName: null,
+  userType: null,
 };
 
 export const userSlice = createSlice({

@@ -1,4 +1,4 @@
-import { DonationDesc } from "../../pages/DonationDetailsPage/DonationDetailsPage.style";
+import { DonationDesc } from "../../../donations/pages/DonationDetailsPage/DonationDetailsPage.style";
 
 type CardDetailsProps = {
     content?: Record<string, string>;

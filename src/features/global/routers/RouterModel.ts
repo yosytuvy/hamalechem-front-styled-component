@@ -1,6 +1,10 @@
 const ROUTES = {
+    signIn: "signIn",
+    login: "login",
+    allDonations: "donations",
+    allRequests: "requests",
     donationDetail: "donations/:id",
-    allDonations: "donations"
+    requestDetail: "requests/:id",
 };
 
 export default ROUTES;

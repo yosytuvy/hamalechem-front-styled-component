@@ -1,4 +1,4 @@
-import { DonationTitle } from "../../pages/DonationDetailsPage/DonationDetailsPage.style";
+import { DonationTitle } from "../../../donations/pages/DonationDetailsPage/DonationDetailsPage.style";
 
 type CardHeaderProps = {
     title?: string;

@@ -1,11 +1,11 @@
-import { DonationInterface } from "../../interfaces/donationInterface";
+import { DonationInterface } from "../interfaces/donationInterface";
 import {
     DonationCard as Container,
     DonationContent,
-} from "../../pages/DonationDetailsPage/DonationDetailsPage.style";
-import CardDetails from "../CardDetails/CardDetails";
-import CardHeader from "../CardHeader/CardHeader";
-import CardImage from "../CardImage/CardImage";
+} from "../pages/DonationDetailsPage/DonationDetailsPage.style";
+import CardDetails from "../../global/components/CardDetails/CardDetails";
+import CardHeader from "../../global/components/CardHeader/CardHeader";
+import CardImage from "../../global/components/CardImage/CardImage";
 
 type DonaitonCardProps = {
     donation: DonationInterface;

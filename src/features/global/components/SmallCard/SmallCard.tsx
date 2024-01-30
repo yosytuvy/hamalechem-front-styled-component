@@ -1,23 +1,25 @@
 import { useNavigate } from "react-router-dom";
-import { DonationInterface } from "../../interfaces/donationInterface";
+import { DonationInterface } from "../../../donations/interfaces/donationInterface";
 import {
     Card,
     CardDetails,
     CardImage,
     CardTitle,
-} from "../../pages/AllDonationsPage/AllDonationsPage.style";
+} from "../../../donations/pages/AllDonationsPage/AllDonationsPage.style";
+import { RequestInterface } from "../../../requests/interfaces/requestInterface";
 
 type SmallCardProps = {
-    product?: DonationInterface;
+    product?: DonationInterface | RequestInterface;
+    type: "requests" | "donations";
 };
 
-const SmallCard = ({ product }: SmallCardProps) => {
+const SmallCard = ({ product, type }: SmallCardProps) => {
     const navigate = useNavigate();
     if (!product) return null;
 
     const handleClick = (id: string) => {
         console.log(id);
-        navigate(`/donations/${id}`);
+        navigate(`/${type}/${id}`);
     };
 
     return (
